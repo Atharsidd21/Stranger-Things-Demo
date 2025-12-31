@@ -81,13 +81,14 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", animSpeed, 0.1f, Time.deltaTime);
 
-        // =========================
+        //=========================
         // ROTATION (A / D)
         // =========================
         if (Mathf.Abs(input.x) > 0.1f)
         {
             transform.Rotate(Vector3.up, input.x * rotationSpeed * 60f * Time.deltaTime);
         }
+        
 
         // =========================
         // MOVEMENT (W / S ONLY)
